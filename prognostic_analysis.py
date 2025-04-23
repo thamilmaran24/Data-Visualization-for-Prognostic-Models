@@ -8,13 +8,13 @@ data = {
     'Prognosis': ['Poor', 'Average', 'Good', 'Poor', 'Average']
 }
 
-# Print data to terminal
+
 print("\n📋 Patient Data:")
 print("PatientID\tAge\tRiskScore\tPrognosis")
 for i in range(len(data['PatientID'])):
     print(f"{data['PatientID'][i]}\t\t{data['Age'][i]}\t{data['RiskScore'][i]}\t\t{data['Prognosis'][i]}")
 
-# Plotting Risk Scores
+
 plt.figure(figsize=(10, 5))
 plt.bar(data['PatientID'], data['RiskScore'], color='orange')
 plt.title('Patient Risk Scores')
@@ -26,12 +26,12 @@ plt.tight_layout()
 plt.savefig('risk_scores.png')
 plt.show()
 
-# Count Prognosis categories
+
 prognosis_counts = {}
 for p in data['Prognosis']:
     prognosis_counts[p] = prognosis_counts.get(p, 0) + 1
 
-# Plotting Prognosis Outcome Distribution
+
 plt.figure(figsize=(6, 4))
 plt.pie(prognosis_counts.values(), labels=prognosis_counts.keys(), autopct='%1.1f%%',
         colors=['red', 'yellow', 'green'])
