@@ -24,12 +24,12 @@ This project implements a Python program to visualize patient data trends and pr
 
 ---
 
-## 🧪 Sample Data Used in Code
+## 📁 Files Included
+prognostic_analysis.py – Main Python script
 
-```text
-PatientID    Age    RiskScore    Prognosis
-101          45     0.8          Poor
-102          50     0.6          Average
-103          38     0.3          Good
-104          60     0.9          Poor
-105          47     0.5          Average
+risk_scores.png – Output image of the risk score bar chart
+
+prognosis_distribution.png – Output image of the prognosis pie chart
+
+README.md – Project documentation
+
